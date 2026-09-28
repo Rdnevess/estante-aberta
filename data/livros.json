@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "titulo": "O Hobbit",
+    "autor": "J.R.R. Tolkien",
+    "categoria": "Fantasia",
+    "resumo": "Bilbo Bolseiro, um hobbit caseiro, é arrastado por um mago e treze anões para uma aventura rumo à montanha guardada pelo dragão Smaug.",
+    "capa": "img/capas/1.svg"
+  },
+  {
+    "id": 2,
+    "titulo": "O Nome do Vento",
+    "autor": "Patrick Rothfuss",
+    "categoria": "Fantasia",
+    "resumo": "Kvothe, um herói lendário que vive escondido como dono de uma estalagem, decide contar a verdadeira história de sua vida.",
+    "capa": "img/capas/2.svg"
+  },
+  {
+    "id": 3,
+    "titulo": "Harry Potter e a Pedra Filosofal",
+    "autor": "J.K. Rowling",
+    "categoria": "Fantasia",
+    "resumo": "Aos onze anos, Harry descobre que é bruxo e parte para Hogwarts, onde o espera um passado que ele desconhece.",
+    "capa": "img/capas/3.svg"
+  },
+  {
+    "id": 4,
+    "titulo": "Duna",
+    "autor": "Frank Herbert",
+    "categoria": "Ficção científica",
+    "resumo": "No desértico planeta Arrakis, única fonte da especiaria mais valiosa do universo, o jovem Paul Atreides se vê no centro de uma guerra entre casas nobres.",
+    "capa": "img/capas/4.svg"
+  },
+  {
+    "id": 5,
+    "titulo": "Fundação",
+    "autor": "Isaac Asimov",
+    "categoria": "Ficção científica",
+    "resumo": "O matemático Hari Seldon prevê a queda do Império Galáctico e cria um plano para encurtar a era de barbárie que virá depois.",
+    "capa": "img/capas/5.svg"
+  },
+  {
+    "id": 6,
+    "titulo": "O Guia do Mochileiro das Galáxias",
+    "autor": "Douglas Adams",
+    "categoria": "Ficção científica",
+    "resumo": "Minutos antes de a Terra ser demolida para dar lugar a uma via expressa hiperespacial, Arthur Dent é salvo por um amigo que é, na verdade, um alienígena.",
+    "capa": "img/capas/6.svg"
+  },
+  {
+    "id": 7,
+    "titulo": "Garota Exemplar",
+    "autor": "Gillian Flynn",
+    "categoria": "Suspense",
+    "resumo": "No dia do quinto aniversário de casamento, Amy desaparece, e todas as suspeitas recaem sobre o marido, Nick.",
+    "capa": "img/capas/7.svg"
+  },
+  {
+    "id": 8,
+    "titulo": "O Código Da Vinci",
+    "autor": "Dan Brown",
+    "categoria": "Suspense",
+    "resumo": "Um assassinato no Museu do Louvre leva o simbologista Robert Langdon a seguir pistas escondidas em obras de Leonardo da Vinci.",
+    "capa": "img/capas/8.svg"
+  },
+  {
+    "id": 9,
+    "titulo": "Orgulho e Preconceito",
+    "autor": "Jane Austen",
+    "categoria": "Romance",
+    "resumo": "Elizabeth Bennet e o orgulhoso Sr. Darcy começam com a pior das impressões um do outro, em uma Inglaterra onde o casamento define o futuro das mulheres.",
+    "capa": "img/capas/9.svg"
+  },
+  {
+    "id": 10,
+    "titulo": "Como Eu Era Antes de Você",
+    "autor": "Jojo Moyes",
+    "categoria": "Romance",
+    "resumo": "Louisa Clark aceita um emprego como cuidadora de Will Traynor, um jovem que ficou tetraplégico após um acidente e perdeu a vontade de viver.",
+    "capa": "img/capas/10.svg"
+  },
+  {
+    "id": 11,
+    "titulo": "It: A Coisa",
+    "autor": "Stephen King",
+    "categoria": "Terror",
+    "resumo": "Em Derry, sete amigos enfrentam uma criatura que assume a forma de seus piores medos e voltam, já adultos, para cumprir uma promessa.",
+    "capa": "img/capas/11.svg"
+  },
+  {
+    "id": 12,
+    "titulo": "Frankenstein",
+    "autor": "Mary Shelley",
+    "categoria": "Terror",
+    "resumo": "O cientista Victor Frankenstein dá vida a um ser feito de partes de cadáveres e passa a ser perseguido pelas consequências de sua criação.",
+    "capa": "img/capas/12.svg"
+  }
+]
