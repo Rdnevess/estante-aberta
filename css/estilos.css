@@ -18,6 +18,16 @@ section[id] {
   background: linear-gradient(135deg, #f3edff 0%, #e8f3ff 100%);
 }
 
+/* Capa do topo: ocupa a largura toda; em telas estreitas recorta as laterais
+   e mantém o livro aberto no centro. */
+.capa-inicio {
+  display: block;
+  width: 100%;
+  height: clamp(150px, 22vw, 260px);
+  object-fit: cover;
+  object-position: center bottom;
+}
+
 /* Capas: mantêm a proporção 300x420 em qualquer largura. */
 .capa {
   width: 100%;
