@@ -1,5 +1,5 @@
 // Gera as capas ilustrativas (SVG) de cada livro a partir de data/livros.json.
-// Uso: node ferramentas/gerar-capas.js
+// Uso: node ferramentas/gerar-capas.mjs
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 
 const raiz = new URL('../', import.meta.url);

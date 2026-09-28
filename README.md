@@ -8,6 +8,7 @@ Os dados são carregados por requisições AJAX (Fetch API) a partir de arquivos
 - **Professor:** Ivan Luiz Pedroso Pires
 - **Avaliação:** Avaliação prática individual — construção de um website AJAX com Bootstrap
 - **Tema:** catálogo de livros de ficção (fantasia, ficção científica, suspense, romance e terror)
+- **Site publicado (GitHub Pages):** <https://rdnevess.github.io/estante-aberta/>
 
 ## Funcionalidades
 
@@ -20,7 +21,9 @@ Os dados são carregados por requisições AJAX (Fetch API) a partir de arquivos
 
 ## Como executar
 
-O projeto **precisa de um servidor HTTP**. Abrir o `index.html` direto (`file://`) não funciona, porque o navegador bloqueia as requisições `fetch` e os módulos JavaScript nesse modo.
+Para apenas ver o site funcionando, acesse a versão publicada: <https://rdnevess.github.io/estante-aberta/>.
+
+Para rodar localmente, o projeto **precisa de um servidor HTTP**. Abrir o `index.html` direto (`file://`) não funciona, porque o navegador bloqueia as requisições `fetch` e os módulos JavaScript nesse modo.
 
 **Opção 1 — Python (já vem instalado em muitos sistemas):**
 
@@ -47,6 +50,8 @@ Depois acesse <http://localhost:8000>. No Windows, se `python` não funcionar, u
 10. **Responsividade:** no DevTools (F12 → ícone de celular), teste larguras como 375 px e 1280 px. As colunas se adaptam, o menu recolhe e não há rolagem horizontal.
 
 > Os parâmetros `?atraso` e `?erro` existem só para demonstrar os estados. A falha simulada acontece apenas na primeira tentativa, para que o botão "Tentar novamente" mostre a recuperação.
+>
+> O roteiro também funciona no site publicado: basta trocar `http://localhost:8000` por `https://rdnevess.github.io/estante-aberta` (por exemplo, <https://rdnevess.github.io/estante-aberta/?erro=lista>). O item 9 é o único que só pode ser feito localmente.
 
 ## Estrutura de pastas
 
@@ -60,23 +65,12 @@ js/ui.js                    funções que montam o HTML (cards, estados, detalhe
 data/livros.json            dados da listagem
 data/detalhes/{titulo}.json dados de detalhes de cada livro (ex.: o-hobbit.json)
 img/capas/{titulo}.svg      capas ilustrativas (ex.: o-hobbit.svg)
-ferramentas/gerar-capas.js  script que gera as capas a partir dos dados
-tests/                      testes automatizados (Node)
+ferramentas/gerar-capas.mjs script que gera as capas a partir dos dados
 ```
-
-## Testes automatizados (opcional)
-
-Com Node.js 20 ou superior instalado:
-
-```bash
-npm test
-```
-
-Os testes verificam a lógica de busca e filtro, as funções de requisição, a montagem do HTML e a integridade dos arquivos de dados e das capas.
 
 ## Fontes e créditos
 
 - **Bootstrap 5.3.3**, carregado via CDN jsDelivr (<https://getbootstrap.com>). Licença MIT.
 - **Dados dos livros:** textos (resumos, sinopses, biografias e curiosidades) escritos para este projeto a partir de informações públicas sobre as obras. Número de páginas e editoras são aproximados e se referem a edições brasileiras. A "Nota da Estante" é uma nota editorial do próprio projeto.
-- **Capas:** ilustrações SVG próprias, geradas pelo script `ferramentas/gerar-capas.js`. **Não** são as capas oficiais dos livros.
+- **Capas:** ilustrações SVG próprias, geradas pelo script `ferramentas/gerar-capas.mjs` (uso: `node ferramentas/gerar-capas.mjs`). **Não** são as capas oficiais dos livros.
 - Não foram usadas imagens nem bibliotecas de terceiros além do Bootstrap.
