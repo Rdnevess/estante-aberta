@@ -19,8 +19,9 @@ export function urlLista(falhar) {
   return falhar ? 'data/nao-existe.json' : 'data/livros.json';
 }
 
-export function urlDetalhes(id, falhar) {
-  return falhar ? 'data/detalhes/nao-existe.json' : `data/detalhes/${id}.json`;
+// "caminho" vem do campo "detalhes" de cada livro (ex.: data/detalhes/duna.json)
+export function urlDetalhes(caminho, falhar) {
+  return falhar ? 'data/detalhes/nao-existe.json' : caminho;
 }
 
 function esperar(ms) {
@@ -61,6 +62,6 @@ export function buscarLivros() {
   return buscarJSON(urlLista(simularErroAgora('lista')), opcoes.atraso);
 }
 
-export function buscarDetalhes(id) {
-  return buscarJSON(urlDetalhes(id, simularErroAgora('detalhes')), opcoes.atraso);
+export function buscarDetalhes(caminho) {
+  return buscarJSON(urlDetalhes(caminho, simularErroAgora('detalhes')), opcoes.atraso);
 }

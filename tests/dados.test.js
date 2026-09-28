@@ -14,10 +14,11 @@ const CATEGORIAS = ['Fantasia', 'Ficção científica', 'Suspense', 'Romance', '
 test('a listagem tem pelo menos 8 livros com os campos obrigatórios', () => {
   assert.ok(livros.length >= 8);
   for (const livro of livros) {
-    for (const campo of ['id', 'titulo', 'autor', 'categoria', 'resumo', 'capa']) {
+    for (const campo of ['id', 'titulo', 'autor', 'categoria', 'resumo', 'capa', 'detalhes']) {
       assert.ok(livro[campo], `livro ${livro.id} sem o campo ${campo}`);
     }
     assert.equal(livro.capa, `img/capas/${nomeArquivo(livro.titulo)}.svg`);
+    assert.equal(livro.detalhes, `data/detalhes/${nomeArquivo(livro.titulo)}.json`);
   }
 });
 
@@ -35,7 +36,7 @@ test('cada categoria prevista tem pelo menos 2 livros e não há outras', () => 
 
 test('cada livro tem um arquivo de detalhes com informações extras', () => {
   for (const livro of livros) {
-    const detalhes = lerJSON(`data/detalhes/${livro.id}.json`);
+    const detalhes = lerJSON(livro.detalhes);
     assert.equal(detalhes.id, livro.id);
     for (const campo of ['ano', 'paginas', 'editora', 'idiomaOriginal', 'sinopse', 'autorBio']) {
       assert.ok(detalhes[campo], `detalhes ${livro.id} sem o campo ${campo}`);

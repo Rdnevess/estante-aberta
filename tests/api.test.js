@@ -25,9 +25,9 @@ test('urlLista aponta para o arquivo real ou para um inexistente', () => {
   assert.equal(urlLista(true), 'data/nao-existe.json');
 });
 
-test('urlDetalhes monta o caminho pelo id', () => {
-  assert.equal(urlDetalhes(3, false), 'data/detalhes/3.json');
-  assert.equal(urlDetalhes(3, true), 'data/detalhes/nao-existe.json');
+test('urlDetalhes usa o caminho do livro ou um inexistente', () => {
+  assert.equal(urlDetalhes('data/detalhes/duna.json', false), 'data/detalhes/duna.json');
+  assert.equal(urlDetalhes('data/detalhes/duna.json', true), 'data/detalhes/nao-existe.json');
 });
 
 test('buscarJSON devolve o JSON quando a resposta é ok', async () => {

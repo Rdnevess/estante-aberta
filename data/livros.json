@@ -5,7 +5,8 @@
     "autor": "J.R.R. Tolkien",
     "categoria": "Fantasia",
     "resumo": "Bilbo Bolseiro, um hobbit caseiro, é arrastado por um mago e treze anões para uma aventura rumo à montanha guardada pelo dragão Smaug.",
-    "capa": "img/capas/o-hobbit.svg"
+    "capa": "img/capas/o-hobbit.svg",
+    "detalhes": "data/detalhes/o-hobbit.json"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "autor": "Patrick Rothfuss",
     "categoria": "Fantasia",
     "resumo": "Kvothe, um herói lendário que vive escondido como dono de uma estalagem, decide contar a verdadeira história de sua vida.",
-    "capa": "img/capas/o-nome-do-vento.svg"
+    "capa": "img/capas/o-nome-do-vento.svg",
+    "detalhes": "data/detalhes/o-nome-do-vento.json"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "autor": "J.K. Rowling",
     "categoria": "Fantasia",
     "resumo": "Aos onze anos, Harry descobre que é bruxo e parte para Hogwarts, onde o espera um passado que ele desconhece.",
-    "capa": "img/capas/harry-potter-e-a-pedra-filosofal.svg"
+    "capa": "img/capas/harry-potter-e-a-pedra-filosofal.svg",
+    "detalhes": "data/detalhes/harry-potter-e-a-pedra-filosofal.json"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "autor": "Frank Herbert",
     "categoria": "Ficção científica",
     "resumo": "No desértico planeta Arrakis, única fonte da especiaria mais valiosa do universo, o jovem Paul Atreides se vê no centro de uma guerra entre casas nobres.",
-    "capa": "img/capas/duna.svg"
+    "capa": "img/capas/duna.svg",
+    "detalhes": "data/detalhes/duna.json"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "autor": "Isaac Asimov",
     "categoria": "Ficção científica",
     "resumo": "O matemático Hari Seldon prevê a queda do Império Galáctico e cria um plano para encurtar a era de barbárie que virá depois.",
-    "capa": "img/capas/fundacao.svg"
+    "capa": "img/capas/fundacao.svg",
+    "detalhes": "data/detalhes/fundacao.json"
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "autor": "Douglas Adams",
     "categoria": "Ficção científica",
     "resumo": "Minutos antes de a Terra ser demolida para dar lugar a uma via expressa hiperespacial, Arthur Dent é salvo por um amigo que é, na verdade, um alienígena.",
-    "capa": "img/capas/o-guia-do-mochileiro-das-galaxias.svg"
+    "capa": "img/capas/o-guia-do-mochileiro-das-galaxias.svg",
+    "detalhes": "data/detalhes/o-guia-do-mochileiro-das-galaxias.json"
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "autor": "Gillian Flynn",
     "categoria": "Suspense",
     "resumo": "No dia do quinto aniversário de casamento, Amy desaparece, e todas as suspeitas recaem sobre o marido, Nick.",
-    "capa": "img/capas/garota-exemplar.svg"
+    "capa": "img/capas/garota-exemplar.svg",
+    "detalhes": "data/detalhes/garota-exemplar.json"
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "autor": "Dan Brown",
     "categoria": "Suspense",
     "resumo": "Um assassinato no Museu do Louvre leva o simbologista Robert Langdon a seguir pistas escondidas em obras de Leonardo da Vinci.",
-    "capa": "img/capas/o-codigo-da-vinci.svg"
+    "capa": "img/capas/o-codigo-da-vinci.svg",
+    "detalhes": "data/detalhes/o-codigo-da-vinci.json"
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "autor": "Jane Austen",
     "categoria": "Romance",
     "resumo": "Elizabeth Bennet e o orgulhoso Sr. Darcy começam com a pior das impressões um do outro, em uma Inglaterra onde o casamento define o futuro das mulheres.",
-    "capa": "img/capas/orgulho-e-preconceito.svg"
+    "capa": "img/capas/orgulho-e-preconceito.svg",
+    "detalhes": "data/detalhes/orgulho-e-preconceito.json"
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "autor": "Jojo Moyes",
     "categoria": "Romance",
     "resumo": "Louisa Clark aceita um emprego como cuidadora de Will Traynor, um jovem que ficou tetraplégico após um acidente e perdeu a vontade de viver.",
-    "capa": "img/capas/como-eu-era-antes-de-voce.svg"
+    "capa": "img/capas/como-eu-era-antes-de-voce.svg",
+    "detalhes": "data/detalhes/como-eu-era-antes-de-voce.json"
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "autor": "Stephen King",
     "categoria": "Terror",
     "resumo": "Em Derry, sete amigos enfrentam uma criatura que assume a forma de seus piores medos e voltam, já adultos, para cumprir uma promessa.",
-    "capa": "img/capas/it-a-coisa.svg"
+    "capa": "img/capas/it-a-coisa.svg",
+    "detalhes": "data/detalhes/it-a-coisa.json"
   },
   {
     "id": 12,
@@ -93,6 +104,7 @@
     "autor": "Mary Shelley",
     "categoria": "Terror",
     "resumo": "O cientista Victor Frankenstein dá vida a um ser feito de partes de cadáveres e passa a ser perseguido pelas consequências de sua criação.",
-    "capa": "img/capas/frankenstein.svg"
+    "capa": "img/capas/frankenstein.svg",
+    "detalhes": "data/detalhes/frankenstein.json"
   }
 ]

@@ -67,7 +67,7 @@ async function abrirDetalhes(id) {
   modal.show();
 
   try {
-    const detalhes = await buscarDetalhes(livro.id);
+    const detalhes = await buscarDetalhes(livro.detalhes);
     // Se o usuário já abriu outro livro enquanto esperava, ignora esta resposta.
     if (livro.id !== ultimoIdSolicitado) return;
     modalCorpo.innerHTML = htmlDetalhes(livro, detalhes);

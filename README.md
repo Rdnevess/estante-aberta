@@ -12,7 +12,7 @@ Os dados são carregados por requisições AJAX (Fetch API) a partir de arquivos
 ## Funcionalidades
 
 - **Listagem dinâmica:** os 12 livros são carregados por AJAX de `data/livros.json`, e os cards são montados a partir dos dados recebidos.
-- **Detalhes sob demanda:** ao clicar em "Ver detalhes", uma nova requisição busca `data/detalhes/{id}.json`, e o resultado aparece em um modal do Bootstrap com ano, páginas, editora, sinopse, autor e curiosidades.
+- **Detalhes sob demanda:** ao clicar em "Ver detalhes", uma nova requisição busca o arquivo do livro em `data/detalhes/` (ex.: `data/detalhes/duna.json`), e o resultado aparece em um modal do Bootstrap com ano, páginas, editora, sinopse, autor e curiosidades.
 - **Busca e filtro:** busca por título ou autor, sem diferenciar maiúsculas nem acentos, combinada com o filtro por categoria. Os resultados mudam sem recarregar a página.
 - **Estados da interface:** indicador de carregamento, mensagem quando não há resultados e aviso de erro com botão "Tentar novamente", tanto na listagem quanto no modal.
 - **Layout responsivo:** grid do Bootstrap com 1 coluna no celular, 2 em telas pequenas, 3 em médias/grandes e 4 em telas largas. Menu recolhível no celular.
@@ -36,7 +36,7 @@ Depois acesse <http://localhost:8000>. No Windows, se `python` não funcionar, u
 ## Roteiro de teste
 
 1. **Listagem:** abra <http://localhost:8000>. Devem aparecer 12 livros e o texto "Exibindo 12 de 12 livros". Na aba *Rede* (F12), aparece a requisição a `data/livros.json`.
-2. **Detalhes:** clique em "Ver detalhes" de qualquer livro. O modal abre com as informações extras, e na aba *Rede* aparece a requisição a `data/detalhes/{id}.json`.
+2. **Detalhes:** clique em "Ver detalhes" de qualquer livro. O modal abre com as informações extras, e na aba *Rede* aparece a requisição ao arquivo do livro em `data/detalhes/` (ex.: `data/detalhes/o-hobbit.json`).
 3. **Busca por texto:** digite `tolkien` (encontra *O Hobbit*) ou `fundacao`, sem acento (encontra *Fundação*).
 4. **Filtro por categoria:** escolha "Terror" (2 livros). Texto e categoria podem ser combinados.
 5. **Estado vazio:** digite `xyz`. Aparece "Nenhum livro encontrado." com o botão "Limpar filtros".
@@ -51,17 +51,17 @@ Depois acesse <http://localhost:8000>. No Windows, se `python` não funcionar, u
 ## Estrutura de pastas
 
 ```
-index.html                 página principal
-css/estilos.css            estilos próprios
-js/main.js                 ponto de entrada: estado da página e eventos
-js/api.js                  requisições AJAX (fetch) e parâmetros de teste
-js/filtro.js               lógica de busca e filtro
-js/ui.js                   funções que montam o HTML (cards, estados, detalhes)
-data/livros.json           dados da listagem
-data/detalhes/{id}.json    dados de detalhes de cada livro
-img/capas/{titulo}.svg     capas ilustrativas (ex.: o-hobbit.svg)
-ferramentas/gerar-capas.js script que gera as capas a partir dos dados
-tests/                     testes automatizados (Node)
+index.html                  página principal
+css/estilos.css             estilos próprios
+js/main.js                  ponto de entrada: estado da página e eventos
+js/api.js                   requisições AJAX (fetch) e parâmetros de teste
+js/filtro.js                lógica de busca e filtro
+js/ui.js                    funções que montam o HTML (cards, estados, detalhes)
+data/livros.json            dados da listagem
+data/detalhes/{titulo}.json dados de detalhes de cada livro (ex.: o-hobbit.json)
+img/capas/{titulo}.svg      capas ilustrativas (ex.: o-hobbit.svg)
+ferramentas/gerar-capas.js  script que gera as capas a partir dos dados
+tests/                      testes automatizados (Node)
 ```
 
 ## Testes automatizados (opcional)
