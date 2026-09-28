@@ -4,6 +4,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Espaço para o cabeçalho fixo (altura da navbar), para ele não cobrir o conteúdo. */
+body {
+  padding-top: 3.5rem;
+}
+
 /* Ao clicar nos links do menu, a seção não fica escondida atrás do cabeçalho fixo. */
 section[id] {
   scroll-margin-top: 4.5rem;
