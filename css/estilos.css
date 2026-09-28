@@ -1,0 +1,56 @@
+/* Estilos próprios da Estante Aberta: complementam o Bootstrap. */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ao clicar nos links do menu, a seção não fica escondida atrás do cabeçalho fixo. */
+section[id] {
+  scroll-margin-top: 4.5rem;
+}
+
+.apresentacao {
+  background: linear-gradient(135deg, #f3edff 0%, #e8f3ff 100%);
+}
+
+/* Capas: mantêm a proporção 300x420 em qualquer largura. */
+.capa {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 300 / 420;
+  object-fit: cover;
+}
+
+.capa-detalhe {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+}
+
+/* Textos longos não "estouram" a largura do card no celular. */
+.card-text,
+.card-title {
+  overflow-wrap: anywhere;
+}
+
+.livro {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.livro:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .livro { transition: none; }
+  .livro:hover { transform: none; }
+}
+
+/* Cores das categorias (as mesmas das capas). */
+.badge.cat-fantasia { background-color: #4b2a7b; }
+.badge.cat-ficcao-cientifica { background-color: #0b3d6b; }
+.badge.cat-suspense { background-color: #2f4858; }
+.badge.cat-romance { background-color: #9c2f5a; }
+.badge.cat-terror { background-color: #1f1f1f; }
