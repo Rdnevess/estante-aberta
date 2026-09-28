@@ -7,7 +7,7 @@ import {
 
 const duna = {
   id: 4, titulo: 'Duna', autor: 'Frank Herbert', categoria: 'Ficção científica',
-  resumo: 'Um planeta desértico.', capa: 'img/capas/4.svg',
+  resumo: 'Um planeta desértico.', capa: 'img/capas/duna.svg',
 };
 
 const detalhesDuna = {

@@ -1,6 +1,10 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { normalizar } from '../js/filtro.js';
+
+// "It: A Coisa" -> "it-a-coisa"
+const nomeArquivo = (titulo) => normalizar(titulo).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 const raiz = new URL('../', import.meta.url);
 const lerJSON = (caminho) => JSON.parse(readFileSync(new URL(caminho, raiz), 'utf8'));
@@ -13,7 +17,7 @@ test('a listagem tem pelo menos 8 livros com os campos obrigatórios', () => {
     for (const campo of ['id', 'titulo', 'autor', 'categoria', 'resumo', 'capa']) {
       assert.ok(livro[campo], `livro ${livro.id} sem o campo ${campo}`);
     }
-    assert.equal(livro.capa, `img/capas/${livro.id}.svg`);
+    assert.equal(livro.capa, `img/capas/${nomeArquivo(livro.titulo)}.svg`);
   }
 });
 

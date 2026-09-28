@@ -59,7 +59,7 @@ js/filtro.js               lógica de busca e filtro
 js/ui.js                   funções que montam o HTML (cards, estados, detalhes)
 data/livros.json           dados da listagem
 data/detalhes/{id}.json    dados de detalhes de cada livro
-img/capas/{id}.svg         capas ilustrativas
+img/capas/{titulo}.svg     capas ilustrativas (ex.: o-hobbit.svg)
 ferramentas/gerar-capas.js script que gera as capas a partir dos dados
 tests/                     testes automatizados (Node)
 ```
