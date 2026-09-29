@@ -27,18 +27,25 @@ function altCapa(livro) {
 
 // Um card do catálogo, já dentro da coluna do grid:
 // 1 coluna no celular, 2 em telas pequenas, 3 em médias/grandes, 4 em muito grandes.
+// A capa também abre os detalhes (clique). Ela fica fora da ordem do Tab
+// (tabindex="-1") porque o botão "Ver detalhes" já faz o mesmo pelo teclado.
 export function htmlCard(livro) {
   const titulo = escaparHTML(livro.titulo);
+  const id = escaparHTML(livro.id);
   return `
     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-      <article class="card h-100 shadow-sm livro">
-        <img src="${escaparHTML(livro.capa)}" class="card-img-top capa" alt="${altCapa(livro)}" width="300" height="420" loading="lazy">
+      <article class="card h-100 livro">
+        <button type="button" class="livro-capa" data-id="${id}" tabindex="-1">
+          <span class="livro-capa-miolo">
+            <img src="${escaparHTML(livro.capa)}" class="capa" alt="${altCapa(livro)}" width="300" height="420" loading="lazy">
+          </span>
+        </button>
         <div class="card-body d-flex flex-column">
           <p class="mb-2">${htmlBadge(livro.categoria)}</p>
           <h3 class="card-title h5">${titulo}</h3>
-          <p class="card-subtitle text-body-secondary small mb-2">${escaparHTML(livro.autor)}</p>
+          <p class="card-subtitle text-body-secondary mb-2">${escaparHTML(livro.autor)}</p>
           <p class="card-text flex-grow-1">${escaparHTML(livro.resumo)}</p>
-          <button type="button" class="btn btn-primary mt-2" data-id="${escaparHTML(livro.id)}">
+          <button type="button" class="btn btn-primary mt-2" data-id="${id}">
             Ver detalhes<span class="visually-hidden"> de ${titulo}</span>
           </button>
         </div>
@@ -89,15 +96,41 @@ export function htmlVazio() {
     </div>`;
 }
 
+// Uma crítica publicada, já dentro da coluna do grid (3 lado a lado em telas grandes):
+// trecho traduzido, com o original em inglês e o link da fonte.
+// "via" indica onde o trecho está reproduzido, quando não é a página do próprio veículo.
+function htmlCritica(critica) {
+  const assinatura = [critica.autor, critica.veiculo, critica.ano].filter(Boolean).map(escaparHTML).join(', ');
+  const url = /^https:\/\//.test(critica.url) ? escaparHTML(critica.url) : '#';
+  const fonte = critica.via ? `citado em ${escaparHTML(critica.via)}` : 'ler a crítica';
+  return `
+    <div class="col-12 col-lg-4">
+    <figure class="critica h-100">
+      <blockquote class="critica-trecho">
+        <p>${escaparHTML(critica.trecho)}</p>
+      </blockquote>
+      <figcaption class="critica-fonte">
+        — ${assinatura}
+        · <a href="${url}" target="_blank" rel="noopener noreferrer">${fonte}<span class="visually-hidden"> (abre em nova aba)</span></a>
+        <details class="critica-original">
+          <summary>Original em inglês</summary>
+          <p lang="en">${escaparHTML(critica.original)}</p>
+        </details>
+      </figcaption>
+    </figure>
+    </div>`;
+}
+
 // Conteúdo do modal de detalhes (dados da listagem + dados da nova requisição).
 export function htmlDetalhes(livro, detalhes) {
   const curiosidades = detalhes.curiosidades
     .map((item) => `<li>${escaparHTML(item)}</li>`)
     .join('');
+  const criticas = (detalhes.criticas || []).map(htmlCritica).join('');
   return `
     <div class="row g-4">
       <div class="col-12 col-md-4">
-        <img src="${escaparHTML(livro.capa)}" class="img-fluid rounded shadow-sm d-block mx-auto capa-detalhe" alt="${altCapa(livro)}" width="300" height="420">
+        <img src="${escaparHTML(livro.capa)}" class="capa-detalhe" alt="${altCapa(livro)}" width="300" height="420">
       </div>
       <div class="col-12 col-md-8">
         <p class="mb-1">${htmlBadge(livro.categoria)}</p>
@@ -121,5 +154,11 @@ export function htmlDetalhes(livro, detalhes) {
         <h3 class="h6">Curiosidades</h3>
         <ul class="mb-0">${curiosidades}</ul>
       </div>
-    </div>`;
+    </div>
+    ${criticas ? `
+    <section class="criticas mt-4 pt-4" aria-labelledby="titulo-criticas">
+      <h3 id="titulo-criticas" class="h5 mb-3">O que a crítica disse</h3>
+      <div class="row g-3">${criticas}</div>
+      <p class="small text-body-secondary mt-3 mb-0">Trechos traduzidos pelo projeto. As críticas originais estão em inglês.</p>
+    </section>` : ''}`;
 }

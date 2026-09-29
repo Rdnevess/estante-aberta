@@ -1,4 +1,37 @@
-/* Estilos próprios da Estante Aberta: complementam o Bootstrap. */
+/* Estilos próprios da Estante Aberta: complementam o Bootstrap.
+   Tema escuro inspirado em livrarias editoriais: fundo marrom-ameixa,
+   tipografia serifada e livros tratados como objetos físicos. */
+
+/* Paleta do site. O tema escuro do Bootstrap (data-bs-theme="dark" no <html>)
+   é ajustado para estas cores. */
+:root {
+  --ea-fundo: #201819;
+  --ea-superficie: #2b2123;
+  --ea-superficie-alta: #352a2c;
+  --ea-borda: #463839;
+  --ea-texto: #f4ede8;
+  --ea-texto-suave: #b9aca6;
+  --ea-destaque: #dccdf5;
+  --ea-destaque-forte: #c7b2ef;
+  --ea-fonte-titulo: 'Fraunces', Georgia, serif;
+  --ea-fonte-texto: 'Newsreader', Georgia, serif;
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: var(--ea-fundo);
+  --bs-body-bg-rgb: 32, 24, 25;
+  --bs-body-color: var(--ea-texto);
+  --bs-body-color-rgb: 244, 237, 232;
+  --bs-secondary-color: var(--ea-texto-suave);
+  --bs-tertiary-bg: var(--ea-superficie);
+  --bs-border-color: var(--ea-borda);
+  --bs-primary-rgb: 220, 205, 245;
+  --bs-link-color: var(--ea-destaque);
+  --bs-link-color-rgb: 220, 205, 245;
+  --bs-link-hover-color: #ffffff;
+  --bs-body-font-family: var(--ea-fonte-texto);
+  --bs-body-font-size: 1.0625rem;
+}
 
 html {
   scroll-behavior: smooth;
@@ -6,16 +39,76 @@ html {
 
 /* Espaço para o cabeçalho fixo (altura da navbar), para ele não cobrir o conteúdo. */
 body {
-  padding-top: 3.5rem;
+  padding-top: 3.75rem;
 }
 
 /* Ao clicar nos links do menu, a seção não fica escondida atrás do cabeçalho fixo. */
 section[id] {
-  scroll-margin-top: 4.5rem;
+  scroll-margin-top: 4.75rem;
 }
 
+h1, h2, h3, .h1, .h2, .h3, .h4, .h5, .h6, .navbar-brand, .modal-title {
+  font-family: var(--ea-fonte-titulo);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Cabeçalho: mesma cor do fundo, separado por uma linha fina. */
+.cabecalho {
+  background-color: var(--ea-fundo);
+  border-bottom: 1px solid var(--ea-borda);
+}
+
+/* Logo: símbolo (três lombadas na prateleira) + nome em serifa,
+   com "Aberta" em itálico lilás, como o destaque do título da página. */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo-simbolo {
+  width: 2.25rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+}
+
+.logo-nome {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.logo-nome em {
+  font-weight: 500;
+  color: var(--ea-destaque);
+}
+
+.logo-lema {
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--ea-borda);
+  font-family: var(--ea-fonte-texto);
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ea-texto-suave);
+}
+
+/* Área 1: apresentação */
 .apresentacao {
-  background: linear-gradient(135deg, #f3edff 0%, #e8f3ff 100%);
+  background-color: var(--ea-fundo);
+}
+
+.apresentacao h1 {
+  font-weight: 500;
+}
+
+.apresentacao h1 em {
+  color: var(--ea-destaque);
+}
+
+.apresentacao .list-group-item {
+  background-color: var(--ea-superficie);
 }
 
 /* Capa do topo: ocupa a largura toda; em telas estreitas recorta as laterais
@@ -28,18 +121,93 @@ section[id] {
   object-position: center bottom;
 }
 
+/* Botões e formulário na cor de destaque (lilás claro com texto escuro). */
+.btn-primary {
+  --bs-btn-color: var(--ea-fundo);
+  --bs-btn-bg: var(--ea-destaque);
+  --bs-btn-border-color: var(--ea-destaque);
+  --bs-btn-hover-color: var(--ea-fundo);
+  --bs-btn-hover-bg: var(--ea-destaque-forte);
+  --bs-btn-hover-border-color: var(--ea-destaque-forte);
+  --bs-btn-active-color: var(--ea-fundo);
+  --bs-btn-active-bg: var(--ea-destaque-forte);
+  --bs-btn-active-border-color: var(--ea-destaque-forte);
+  --bs-btn-focus-shadow-rgb: 220, 205, 245;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--ea-destaque);
+  --bs-btn-border-color: var(--ea-destaque);
+  --bs-btn-hover-color: var(--ea-fundo);
+  --bs-btn-hover-bg: var(--ea-destaque);
+  --bs-btn-hover-border-color: var(--ea-destaque);
+  --bs-btn-active-color: var(--ea-fundo);
+  --bs-btn-active-bg: var(--ea-destaque);
+  --bs-btn-focus-shadow-rgb: 220, 205, 245;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--ea-destaque);
+  box-shadow: 0 0 0 0.25rem rgba(220, 205, 245, 0.25);
+}
+
+.busca {
+  background-color: var(--ea-superficie);
+}
+
+/* Área 2: catálogo — cada card é um livro. */
+.livro {
+  background-color: var(--ea-superficie);
+  border-color: var(--ea-borda);
+}
+
+/* A capa é um botão (abre os detalhes), mas sem aparência de botão. */
+.livro-capa {
+  display: block;
+  width: 100%;
+  perspective: 900px;
+  padding: 1.25rem 1.25rem 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+/* A capa gira como um livro puxado da estante; a faixa escura à esquerda
+   imita a dobra da lombada. */
+.livro-capa-miolo {
+  display: block;
+  position: relative;
+  border-radius: 2px 4px 4px 2px;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.45);
+  transform-origin: left center;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.livro-capa-miolo::after {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 7%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.35), rgba(255, 255, 255, 0.12) 60%, rgba(0, 0, 0, 0));
+  border-radius: 2px 0 0 2px;
+  pointer-events: none;
+}
+
+.livro:hover .livro-capa-miolo,
+.livro:focus-within .livro-capa-miolo {
+  transform: rotateY(-16deg);
+  box-shadow: 1.25rem 1rem 1.75rem rgba(0, 0, 0, 0.55);
+}
+
 /* Capas: mantêm a proporção 300x420 em qualquer largura. */
 .capa {
+  display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 300 / 420;
   object-fit: cover;
-}
-
-.capa-detalhe {
-  max-width: 220px;
-  width: 100%;
-  height: auto;
+  border-radius: inherit;
 }
 
 /* Textos longos não "estouram" a largura do card no celular. */
@@ -48,24 +216,112 @@ section[id] {
   overflow-wrap: anywhere;
 }
 
-.livro {
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+.livro .card-subtitle {
+  font-style: italic;
 }
 
-.livro:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15) !important;
+/* Modal: a capa aparece em perspectiva, como um livro tirado da estante. */
+.modal-content {
+  --bs-modal-bg: var(--ea-superficie);
+  --bs-modal-border-color: var(--ea-borda);
+}
+
+.capa-detalhe {
+  display: block;
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 2px 4px 4px 2px;
+  transform: perspective(900px) rotateY(14deg);
+  box-shadow: -1rem 1rem 1.75rem rgba(0, 0, 0, 0.5);
+}
+
+/* Críticas no modal: citação em serifa itálica, com uma aspa grande decorativa. */
+.criticas {
+  border-top: 1px solid var(--ea-borda);
+}
+
+.critica {
+  position: relative;
+  margin: 0;
+  padding: 1.5rem 1.25rem 1.25rem;
+  background-color: var(--ea-superficie-alta);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.critica::before {
+  content: '\201C';
+  position: absolute;
+  top: -0.2rem;
+  left: 0.9rem;
+  font-family: var(--ea-fonte-titulo);
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--ea-destaque);
+  opacity: 0.5;
+}
+
+.critica-trecho {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  font-family: var(--ea-fonte-texto);
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+.critica-trecho p {
+  margin-bottom: 0;
+}
+
+.critica-fonte {
+  font-size: 0.85rem;
+  color: var(--ea-texto-suave);
+}
+
+.critica-original summary {
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.critica-original p {
+  margin: 0.5rem 0 0;
+  font-style: italic;
+}
+
+/* Área 3: sobre */
+.sobre {
+  background-color: var(--ea-superficie);
+  border-top: 1px solid var(--ea-borda);
+}
+
+.rodape {
+  background-color: #181213;
+  border-top: 1px solid var(--ea-borda);
+  color: var(--ea-texto-suave);
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .livro { transition: none; }
-  .livro:hover { transform: none; }
+  .livro-capa-miolo { transition: none; }
+  .livro:hover .livro-capa-miolo,
+  .livro:focus-within .livro-capa-miolo {
+    transform: none;
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.45);
+  }
 }
 
-/* Cores das categorias (as mesmas das capas). */
-.badge.cat-fantasia { background-color: #4b2a7b; }
-.badge.cat-ficcao-cientifica { background-color: #0b3d6b; }
-.badge.cat-suspense { background-color: #2f4858; }
-.badge.cat-romance { background-color: #9c2f5a; }
-.badge.cat-terror { background-color: #1f1f1f; }
+/* Cores das categorias: tons claros das capas, com texto escuro. */
+.badge {
+  color: var(--ea-fundo);
+  font-family: var(--ea-fonte-texto);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.badge.cat-fantasia { background-color: #dccdf5; }
+.badge.cat-ficcao-cientifica { background-color: #cfe5fa; }
+.badge.cat-suspense { background-color: #f6e6b8; }
+.badge.cat-romance { background-color: #f9d4e2; }
+.badge.cat-terror { background-color: #e4dfe6; }

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+  <!-- Símbolo da Estante Aberta: três lombadas na prateleira, a última inclinada
+       como o livro puxado da estante na capa do topo. Cores das categorias. -->
+  <rect x="5" y="9" width="7" height="24" rx="1.5" fill="#dccdf5"/>
+  <rect x="5" y="12" width="7" height="1.6" fill="#4b2a7b" fill-opacity="0.45"/>
+  <rect x="5" y="28.5" width="7" height="1.6" fill="#4b2a7b" fill-opacity="0.45"/>
+  <rect x="13.5" y="13" width="7" height="20" rx="1.5" fill="#f9d4e2"/>
+  <rect x="13.5" y="16" width="7" height="1.6" fill="#9c2f5a" fill-opacity="0.45"/>
+  <rect x="13.5" y="28.5" width="7" height="1.6" fill="#9c2f5a" fill-opacity="0.45"/>
+  <g transform="rotate(-20 36 33)">
+    <rect x="29" y="11" width="7" height="22" rx="1.5" fill="#f6e6b8"/>
+    <rect x="29" y="14" width="7" height="1.6" fill="#2f4858" fill-opacity="0.45"/>
+    <rect x="29" y="28.5" width="7" height="1.6" fill="#2f4858" fill-opacity="0.45"/>
+  </g>
+  <rect x="2" y="33" width="36" height="3" rx="1.5" fill="#b9aca6"/>
+</svg>
