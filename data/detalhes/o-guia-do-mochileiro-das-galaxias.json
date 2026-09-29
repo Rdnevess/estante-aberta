@@ -11,5 +11,29 @@
     "No livro, a resposta para a vida, o universo e tudo mais é 42.",
     "Fãs comemoram o Dia da Toalha em 25 de maio, em homenagem ao autor."
   ],
-  "autorBio": "Douglas Adams (1952–2001) foi escritor e roteirista britânico, conhecido pelo humor e pela sátira em suas obras de ficção científica."
+  "autorBio": "Douglas Adams (1952–2001) foi escritor e roteirista britânico, conhecido pelo humor e pela sátira em suas obras de ficção científica.",
+  "criticas": [
+    {
+      "veiculo": "Kirkus Reviews",
+      "ano": 1980,
+      "trecho": "…fãs de paródia absurda e impassível vão folhear com prazer esta sátira simpática para arrancar umas boas duas dúzias de risadas.",
+      "original": "…fans of absurd deadpan parody will happily flip through this likable send-up in order to extract a couple of dozen fine giggles.",
+      "url": "https://www.kirkusreviews.com/book-reviews/douglas-adams/the-hitchhikers-guide-to-the-galaxy/"
+    },
+    {
+      "veiculo": "Reactor (Tor.com)",
+      "autor": "Alan Brown",
+      "ano": 2021,
+      "trecho": "Um exemplo perfeito é O Guia do Mochileiro das Galáxias, de Douglas Adams, um dos livros mais queridos do panteão da grande ficção científica.",
+      "original": "A perfect example is Douglas Adams' The Hitchhiker's Guide to the Galaxy, one of the best-loved books in the pantheon of great science fiction.",
+      "url": "https://reactormag.com/laughing-in-the-face-of-doom-the-hitchhikers-guide-to-the-galaxy-by-douglas-adams/"
+    },
+    {
+      "veiculo": "The Washington Post Book World",
+      "trecho": "Extremamente engraçado… loucura inspirada… [e] acaba cedo demais.",
+      "original": "Extremely funny . . . inspired lunacy . . . [and] over much too soon.",
+      "url": "https://www.penguinrandomhouse.com/books/670/the-hitchhikers-guide-to-the-galaxy-the-illustrated-edition-by-douglas-adams/",
+      "via": "Penguin Random House"
+    }
+  ]
 }

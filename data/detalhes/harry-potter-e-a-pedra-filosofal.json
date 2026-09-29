@@ -11,5 +11,26 @@
     "Nos Estados Unidos, o título foi alterado para Harry Potter and the Sorcerer's Stone.",
     "Foi adaptado para o cinema em 2001, com direção de Chris Columbus."
   ],
-  "autorBio": "J.K. Rowling (1965) é uma escritora britânica. A série Harry Potter, com sete livros, tornou-se um dos maiores fenômenos editoriais da história."
+  "autorBio": "J.K. Rowling (1965) é uma escritora britânica. A série Harry Potter, com sete livros, tornou-se um dos maiores fenômenos editoriais da história.",
+  "criticas": [
+    {
+      "veiculo": "Kirkus Reviews",
+      "ano": 1998,
+      "trecho": "Esta fantasia extremamente divertida é cheia de detalhes imaginativos, de jujubas de sabores estranhos a ovos de dragão chocados na lareira.",
+      "original": "This hugely enjoyable fantasy is filled with imaginative details, from oddly flavored jelly beans to dragons' eggs hatched on the hearth.",
+      "url": "https://www.kirkusreviews.com/book-reviews/jk-rowling/harry-potter-and-the-sorcerers-stone/"
+    },
+    {
+      "veiculo": "Publishers Weekly",
+      "trecho": "Os leitores terão uma aventura deliciosa com esta estreia premiada de uma autora britânica que segue os passos de P. L. Travers e Roald Dahl.",
+      "original": "Readers are in for a delightful romp with this award-winning debut from a British author who dances in the footsteps of P.L. Travers and Roald Dahl.",
+      "url": "https://www.publishersweekly.com/978-0-590-35340-3"
+    },
+    {
+      "veiculo": "Common Sense Media",
+      "trecho": "Há dois tipos de magia nesta fenomenal história do menino bruxo: a dos feitiços propriamente ditos e o encanto de um mundo empolgante para leitores de fantasia jovens (e não tão jovens) explorarem.",
+      "original": "There are two kinds of magic in this phenomenal boy-wizard tale, the literal spell kind and the spell cast by a thrilling world for young (and old) fantasy readers to explore.",
+      "url": "https://www.commonsensemedia.org/book-reviews/harry-potter-and-the-sorcerers-stone-harry-potter-book-1"
+    }
+  ]
 }

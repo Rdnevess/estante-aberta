@@ -11,5 +11,31 @@
     "O capítulo \"Charadas no escuro\" foi reescrito na edição de 1951 para se encaixar em O Senhor dos Anéis.",
     "Foi adaptado ao cinema por Peter Jackson em uma trilogia lançada entre 2012 e 2014."
   ],
-  "autorBio": "John Ronald Reuel Tolkien (1892–1973) foi filólogo e professor da Universidade de Oxford. Criou a Terra-média, cenário de O Hobbit e de O Senhor dos Anéis."
+  "autorBio": "John Ronald Reuel Tolkien (1892–1973) foi filólogo e professor da Universidade de Oxford. Criou a Terra-média, cenário de O Hobbit e de O Senhor dos Anéis.",
+  "criticas": [
+    {
+      "veiculo": "Kirkus Reviews",
+      "ano": 1938,
+      "trecho": "É um livro para ser vendido com cuidado, aos pais certos — e, com um bom começo, pode se tornar um clássico duradouro.",
+      "original": "It's a book to be sold carefully, to the right parents -- and with a good start, it might become a perennial.",
+      "url": "https://www.kirkusreviews.com/book-reviews/a/j-r-r-tolkien/the-hobbit-or-there-and-back-again/"
+    },
+    {
+      "veiculo": "The Times Literary Supplement",
+      "autor": "C. S. Lewis",
+      "ano": 1937,
+      "trecho": "Previsões são perigosas, mas O Hobbit pode muito bem se provar um clássico.",
+      "original": "Prediction is dangerous: but The Hobbit may well prove a classic.",
+      "url": "https://www.theparisreview.org/blog/2013/11/19/c-s-lewis-reviews-the-hobbit-1937/",
+      "via": "The Paris Review"
+    },
+    {
+      "veiculo": "The New York Times",
+      "ano": 1938,
+      "trecho": "De uma originalidade fresca e deliciosamente imaginativo.",
+      "original": "freshly original and delightfully imaginative",
+      "url": "https://time.com/4941811/hobbit-anniversary-1937-reviews/",
+      "via": "TIME"
+    }
+  ]
 }

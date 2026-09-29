@@ -11,5 +11,31 @@
     "Foi publicado sem o nome de Jane Austen na capa.",
     "A frase de abertura, sobre um homem solteiro e rico precisar de uma esposa, é uma das mais citadas da literatura inglesa."
   ],
-  "autorBio": "Jane Austen (1775–1817) foi uma escritora inglesa. Seus romances retratam com ironia a vida da pequena nobreza rural de sua época."
+  "autorBio": "Jane Austen (1775–1817) foi uma escritora inglesa. Seus romances retratam com ironia a vida da pequena nobreza rural de sua época.",
+  "criticas": [
+    {
+      "veiculo": "The British Critic",
+      "ano": 1813,
+      "trecho": "Muito superior a quase todas as publicações do gênero que nos chegaram recentemente.",
+      "original": "very far superior to almost all the publications of the kind which have lately come before us",
+      "url": "https://janeaustens.house/online-exhibition/the-making-of-pride-and-prejudice/the-making-of-pride-and-prejudice-5/",
+      "via": "Jane Austen's House"
+    },
+    {
+      "veiculo": "The Critical Review",
+      "ano": 1813,
+      "trecho": "Encontram-se muitas mulheres tolas como a Sra. Bennet, e numerosos clérigos como o Sr. Collins, que são tudo para todos e servis ao extremo com seus superiores.",
+      "original": "Many such silly women as Mrs. Bennet may be found; and numerous parsons like Mr. Collins, who are every thing to every body; and servile in the extreme to their superiors.",
+      "url": "https://janeaustens.house/online-exhibition/the-making-of-pride-and-prejudice/the-making-of-pride-and-prejudice-5/",
+      "via": "Jane Austen's House"
+    },
+    {
+      "veiculo": "NPR",
+      "autor": "Maureen Corrigan",
+      "ano": 2013,
+      "trecho": "É a voz de garota esperta de Austen — picante, irônica, de quem revira os olhos — que parece tão próxima da consciência moderna.",
+      "original": "Rather, it's Austen's smart-girl voice: peppery, wry, eye rolling — that seems so close to modern consciousness.",
+      "url": "https://www.npr.org/2013/01/28/170158889/jane-austens-pride-and-prejudice-at-200"
+    }
+  ]
 }

@@ -11,5 +11,30 @@
     "Mary Shelley tinha 18 anos quando começou a escrever o livro.",
     "É considerado um dos primeiros romances de ficção científica."
   ],
-  "autorBio": "Mary Shelley (1797–1851) foi uma escritora inglesa. Escreveu Frankenstein ainda muito jovem, e a obra se tornou um marco da literatura gótica."
+  "autorBio": "Mary Shelley (1797–1851) foi uma escritora inglesa. Escreveu Frankenstein ainda muito jovem, e a obra se tornou um marco da literatura gótica.",
+  "criticas": [
+    {
+      "veiculo": "Blackwood's Edinburgh Magazine",
+      "autor": "Walter Scott",
+      "ano": 1818,
+      "trecho": "No conjunto, a obra nos dá uma elevada ideia do gênio original do autor e de seu feliz poder de expressão.",
+      "original": "Upon the whole, the work impresses us with a high idea of the author's original genius and happy power of expression.",
+      "url": "https://knarf.english.upenn.edu/Reviews/black.html"
+    },
+    {
+      "veiculo": "The Quarterly Review",
+      "autor": "John Wilson Croker",
+      "ano": 1818,
+      "trecho": "Nossos leitores deduzirão por este resumo que tecido de absurdos horríveis e repugnantes esta obra apresenta.",
+      "original": "Our readers will guess from this summary, what a tissue of horrible and disgusting absurdity this work presents.",
+      "url": "https://knarf.english.upenn.edu/Reviews/quarter.html"
+    },
+    {
+      "veiculo": "The Edinburgh Magazine",
+      "ano": 1818,
+      "trecho": "Nunca se imaginou história mais extravagante; ainda assim, como a maioria das ficções desta época, ela tem um ar de realidade, por estar ligada aos projetos e paixões favoritos de seu tempo.",
+      "original": "There never was a wilder story imagined, yet, like most of the fictions of this age, it has an air of reality attached to it, by being connected with the favourite projects and passions of the times.",
+      "url": "https://knarf.english.upenn.edu/Reviews/edinmag.html"
+    }
+  ]
 }

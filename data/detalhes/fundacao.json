@@ -11,5 +11,28 @@
     "Em 1966, a série recebeu um prêmio Hugo especial como melhor série de todos os tempos.",
     "Asimov se inspirou em Declínio e Queda do Império Romano, de Edward Gibbon."
   ],
-  "autorBio": "Isaac Asimov (1920–1992) foi bioquímico e escritor russo-americano, autor de centenas de livros de ficção científica e de divulgação científica."
+  "autorBio": "Isaac Asimov (1920–1992) foi bioquímico e escritor russo-americano, autor de centenas de livros de ficção científica e de divulgação científica.",
+  "criticas": [
+    {
+      "veiculo": "Kirkus Reviews",
+      "ano": 1951,
+      "trecho": "A história da sobrevivência dessa colônia e de seu domínio final sobre o império em ruínas sustenta a narrativa, que é — desta vez — melhor como ciência do que como ficção.",
+      "original": "The story of this colony's survival and eventual command of the broken empire sustains the narrative which is- this time-better science than fiction.",
+      "url": "https://www.kirkusreviews.com/book-reviews/isaac-asimov/foundation/"
+    },
+    {
+      "veiculo": "Reactor (Tor.com)",
+      "autor": "Jo Walton",
+      "ano": 2011,
+      "trecho": "Se você nunca leu estes livros e os pegar como um pedaço da história da ficção científica, pode acabar continuando a leitura porque está se divertindo.",
+      "original": "If you have never read these and you pick them up as a piece of science fiction history, you may find you keep reading them because you're having fun.",
+      "url": "https://reactormag.com/tampering-with-historical-destiny-isaac-asimovs-foundation-trilogy/"
+    },
+    {
+      "veiculo": "Common Sense Media",
+      "trecho": "A ficção científica é o território das grandes ideias: Isaac Asimov, com QI de gênio e interesses variados, tinha mais grandes ideias do que a maioria, e muitas delas estão aqui.",
+      "original": "But science fiction is the turf of big ideas: Author Isaac Asimov, with a genius IQ and a broad range of interests, had more big ideas than most, many of them on display here.",
+      "url": "https://www.commonsensemedia.org/book-reviews/foundation"
+    }
+  ]
 }

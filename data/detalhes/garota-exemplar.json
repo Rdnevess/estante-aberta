@@ -11,5 +11,29 @@
     "A própria autora escreveu o roteiro do filme.",
     "A narração alterna entre o ponto de vista de Nick e as páginas do diário de Amy."
   ],
-  "autorBio": "Gillian Flynn (1971) é escritora e roteirista norte-americana. Antes da literatura, trabalhou como jornalista na revista Entertainment Weekly."
+  "autorBio": "Gillian Flynn (1971) é escritora e roteirista norte-americana. Antes da literatura, trabalhou como jornalista na revista Entertainment Weekly.",
+  "criticas": [
+    {
+      "veiculo": "Kirkus Reviews",
+      "ano": 2012,
+      "trecho": "Um daqueles raros thrillers cujas revelações intensificam o suspense em vez de dissipá-lo.",
+      "original": "One of those rare thrillers whose revelations actually intensify its suspense instead of dissipating it.",
+      "url": "https://www.kirkusreviews.com/book-reviews/gillian-flynn/gone-girl/"
+    },
+    {
+      "veiculo": "Publishers Weekly",
+      "ano": 2012,
+      "trecho": "Viciante e assustadoramente inesquecível, é leitura obrigatória para qualquer fã de garotas más e boa escrita.",
+      "original": "Compulsively readable, creepily unforgettable, this is a must read for any fan of bad girls and good writing.",
+      "url": "https://www.publishersweekly.com/9780307588364"
+    },
+    {
+      "veiculo": "NPR",
+      "autor": "Maureen Corrigan",
+      "ano": 2012,
+      "trecho": "É, simplesmente, o thriller do ano.",
+      "original": "It is, simply put, the thriller of the year.",
+      "url": "https://www.npr.org/2012/12/19/167449314/in-2012-s-best-mysteries-mean-girls-rule"
+    }
+  ]
 }

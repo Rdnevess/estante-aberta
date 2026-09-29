@@ -11,5 +11,29 @@
     "Foi adaptado para o cinema em 2006, com direção de Ron Howard e Tom Hanks no papel de Langdon.",
     "Está entre os livros mais vendidos da década de 2000."
   ],
-  "autorBio": "Dan Brown (1964) é um escritor norte-americano de thrillers. Antes do sucesso como autor, foi professor de inglês."
+  "autorBio": "Dan Brown (1964) é um escritor norte-americano de thrillers. Antes do sucesso como autor, foi professor de inglês.",
+  "criticas": [
+    {
+      "veiculo": "Kirkus Reviews",
+      "ano": 2003,
+      "trecho": "Volumoso, emperrado, falastrão.",
+      "original": "Bulky, balky, talky.",
+      "url": "https://www.kirkusreviews.com/book-reviews/dan-brown/the-da-vinci-code/"
+    },
+    {
+      "veiculo": "Publishers Weekly",
+      "ano": 2003,
+      "trecho": "Ainda assim, Brown montou uma trama colossal que vai agradar tanto aos fãs de conspirações quanto aos viciados em thrillers.",
+      "original": "Still, Brown has assembled a whopper of a plot that will please both conspiracy buffs and thriller addicts.",
+      "url": "https://www.publishersweekly.com/978-0-385-50420-1"
+    },
+    {
+      "veiculo": "The New York Times",
+      "autor": "Janet Maslin",
+      "ano": 2003,
+      "trecho": "Neste romance de suspense alegremente erudito, Brown pega a fórmula que vinha desenvolvendo em três romances anteriores e a ajusta até a perfeição de um arrasa-quarteirão.",
+      "original": "In this gleefully erudite suspense novel, Mr. Brown takes the format he has been developing through three earlier novels and fine-tunes it to blockbuster perfection.",
+      "url": "https://www.nytimes.com/2003/03/17/books/books-of-the-times-spinning-a-thriller-from-a-gallery-at-the-louvre.html"
+    }
+  ]
 }

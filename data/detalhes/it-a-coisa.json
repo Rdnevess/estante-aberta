@@ -11,5 +11,28 @@
     "Virou minissérie de TV em 1990, com Tim Curry como Pennywise.",
     "Foi adaptado para o cinema em dois filmes, lançados em 2017 e 2019."
   ],
-  "autorBio": "Stephen King (1947) é um escritor norte-americano, autor de dezenas de romances de terror, suspense e fantasia."
+  "autorBio": "Stephen King (1947) é um escritor norte-americano, autor de dezenas de romances de terror, suspense e fantasia.",
+  "criticas": [
+    {
+      "veiculo": "Kirkus Reviews",
+      "ano": 1986,
+      "trecho": "O Rei do Pulp sorri e arrasta os pés enquanto martela sua alegoria vulgar, mas soa entediado com frequência demais, como se precisasse se chicotear com sua cerveja Kirin favorita para ganhar ânimo.",
+      "original": "The King of the Pulps smiles and shuffles as he punches out his vulgarian allegory, but he too often sounds bored, as if whipping himself on with his favorite Kirin beer for zip.",
+      "url": "https://www.kirkusreviews.com/book-reviews/stephen-king/it-2/"
+    },
+    {
+      "veiculo": "The Washington Post Book World",
+      "trecho": "Uma odisseia hipnotizante de terror… Stephen King é o mestre do horror moderno.",
+      "original": "A mesmerizing odyssey of terror… Stephen King is the master of modern horror.",
+      "url": "https://www.simonandschuster.com/books/It-(Special-Edition)/Stephen-King/9781668227480",
+      "via": "Simon & Schuster"
+    },
+    {
+      "veiculo": "Chicago Sun-Times",
+      "trecho": "Um grande livro… um marco na literatura americana.",
+      "original": "A great book… a landmark in American literature.",
+      "url": "https://www.simonandschuster.com/books/It-(Special-Edition)/Stephen-King/9781668227480",
+      "via": "Simon & Schuster"
+    }
+  ]
 }

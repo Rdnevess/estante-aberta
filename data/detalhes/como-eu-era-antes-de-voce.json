@@ -10,5 +10,29 @@
     "Foi adaptado para o cinema em 2016, com Emilia Clarke e Sam Claflin.",
     "A história continua em Depois de Você (2015) e Ainda Sou Eu (2018)."
   ],
-  "autorBio": "Jojo Moyes (1969) é escritora e jornalista britânica, autora de diversos romances traduzidos para dezenas de idiomas."
+  "autorBio": "Jojo Moyes (1969) é escritora e jornalista britânica, autora de diversos romances traduzidos para dezenas de idiomas.",
+  "criticas": [
+    {
+      "veiculo": "Kirkus Reviews",
+      "ano": 2012,
+      "trecho": "Apesar de alguma previsibilidade no enredo, esta é ficção edificante no seu melhor, com personagens bem construídos diante de escolhas difíceis.",
+      "original": "Despite some obviousness in the storyline, this is uplift fiction at its best, with fully drawn characters making difficult choices.",
+      "url": "https://www.kirkusreviews.com/book-reviews/jojo-moyes/me-before-you/"
+    },
+    {
+      "veiculo": "Publishers Weekly",
+      "ano": 2012,
+      "trecho": "O resultado é um romance encantador, ao mesmo tempo nada convencional e envolvente.",
+      "original": "The end result is a lovely novel, both nontraditional and enthralling.",
+      "url": "https://www.publishersweekly.com/978-0-670-02660-9"
+    },
+    {
+      "veiculo": "The New York Times Book Review",
+      "autor": "Liesl Schillinger",
+      "trecho": "Quando terminei este romance, não quis resenhá-lo: quis relê-lo.",
+      "original": "When I finished this novel, I didn't want to review it: I wanted to reread it.",
+      "url": "https://www.penguinrandomhouse.com/books/312485/me-before-you-by-jojo-moyes/",
+      "via": "Penguin Random House"
+    }
+  ]
 }

@@ -11,5 +11,29 @@
     "Foi publicado originalmente pela Chilton Books, editora mais conhecida por manuais de conserto de automóveis.",
     "Ganhou adaptações para o cinema dirigidas por David Lynch (1984) e por Denis Villeneuve (2021 e 2024)."
   ],
-  "autorBio": "Frank Herbert (1920–1986) foi jornalista e escritor norte-americano. Duna deu origem a uma série de seis romances escritos por ele."
+  "autorBio": "Frank Herbert (1920–1986) foi jornalista e escritor norte-americano. Duna deu origem a uma série de seis romances escritos por ele.",
+  "criticas": [
+    {
+      "veiculo": "Kirkus Reviews",
+      "ano": 1965,
+      "trecho": "Esta fantasia espacial futurista pode dar início a uma febre underground.",
+      "original": "This future space fantasy might start an underground craze.",
+      "url": "https://www.kirkusreviews.com/book-reviews/frank-herbert/dune-3/"
+    },
+    {
+      "veiculo": "Reactor (Tor.com)",
+      "autor": "Sam Reader",
+      "ano": 2020,
+      "trecho": "Duna conquistou plenamente seu lugar como uma das maiores óperas espaciais, e um dos maiores romances de ficção científica, já escritos.",
+      "original": "Dune has fully earned its place as one of the greatest space operas, and one of the greatest science fiction novels, ever written.",
+      "url": "https://reactormag.com/frank-herberts-dune-science-fictions-greatest-epic-fantasy-novel/"
+    },
+    {
+      "veiculo": "The New Yorker",
+      "trecho": "É possível que Duna seja ainda mais relevante hoje do que quando foi publicado pela primeira vez.",
+      "original": "It is possible that Dune is even more relevant now than when it was first published.",
+      "url": "https://www.penguinrandomhouse.com/books/352036/dune-movie-tie-in-by-frank-herbert/",
+      "via": "Penguin Random House"
+    }
+  ]
 }
